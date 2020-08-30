@@ -1,0 +1,37 @@
+/*Estilo de cabecera*/
+
+h1 {
+    color: blue;
+    background-color: white;
+    padding: 1px;
+}
+
+header {
+    color: darkred;
+    text-align: center;
+    padding: 1px;
+}
+
+
+/*Formato de imágenes*/
+
+img {
+    width: 50%;
+    background-color: gray;
+}
+
+section header {
+    background-color: darkolivegreen;
+    text-align: center;
+}
+
+.cita_Pasiflora {
+    text-align: left;
+    font-style: italic;
+    background-color: coral;
+}
+
+.cita_RocioSagrado {
+    text-align: left;
+    background-color: aquamarine;
+}
