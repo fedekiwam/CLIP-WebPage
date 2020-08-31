@@ -17,8 +17,9 @@ header {
 /*Formato de imágenes*/
 
 img {
-    width: 50%;
+    width: 40%;
     background-color: gray;
+    float: right;
 }
 
 section header {
