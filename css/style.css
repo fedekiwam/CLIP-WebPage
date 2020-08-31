@@ -1,13 +1,14 @@
 /*Estilo de cabecera*/
 
-h1 {
-    color: blue;
-    background-color: white;
+.headerStyle {
+    color: white;
+    background-color: coral;
     padding: 1px;
 }
 
 header {
-    color: darkred;
+    color: white;
+    background-color: coral;
     text-align: center;
     padding: 1px;
 }
