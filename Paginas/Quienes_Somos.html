@@ -6,34 +6,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quienes Somos</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
-<nav class="navbar navbar-expand-sm   navbar-light bg-light">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item">
-                <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/Paginas/Productos.html">Productos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/Paginas/Quienes_Somos.html">Quienes Somos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/Paginas/Contactame.html">Contactame</a>
-            </li>
-</nav>
+<div class="row">
+    <div class="col-12">
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse container" id="navbar">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ">
+                    <li class="nav-item ">
+                        <a class="nav-link " href="/index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="/Paginas/Productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="/Paginas/Quienes_Somos.html">Quienes Somos</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="/Paginas/Contactame.html">Contactame</a>
+                    </li>
+            </div>
+        </nav>
+    </div>
+</div>
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="headerStyle">Quienes Somos</h1>
+            </div>
+        </div>
+    </div>
+</header>
 
 <body>
-    <h1>Quienes Somos</h1>
-    <section>
-        <p> Soy una profesora de educación física, mamá y emprendedora que a través de mi trabajo les hago llegar productos naturales autosustentables que ayudan al medio ambiente y a las familias a poder tener acceso a un producto de alta calidad y sin ningún
-            químico que afecte la salud de las personas.</p>
-    </section>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <section>
+                    <p class="quienesSomos"> El proyecto El Manzano surge como consecuencia de un cambio de paradigma, de una nueva cosmovisión, donde me reconozco como parte de la naturaleza y con ello, el cambio de consumos se hace fundamental.</p>
+                    <p class="quienesSomos"> El Manzano es una llamado a cuidarnos y cuidar el ambiente, a sustentarnos entre los proyectos ecoamigables y amigables entre las personas, priorizando el tiempo compartido en la familia, cultivar el vínculo, teniendo el tiempo como
+                        recurso nutritivo.</p>
+                    <p class="quienesSomos"> Por ello creamos este espacio virtual, donde sólo con sentirte en la misma vibración que nosotres, es suficiente para hacer la elección del producto para el cuidado y la higiene de todes en la familia.</p>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="adivinanza">¿Adivina adivinador?</h1>
+                <h2 class="cita_Pasiflora1">Intenta adivinar un número entre 1 y 20. Sólo tienes 4 intentos posibles.</h2><br>
+                <p class="cita_Pasiflora2">¿Cuál es tu nombre? <input type="text" pattern="[a-zA-Z ]{1,}" maxlength="50" id="nombre" name="nombre">
+                </p>
+                <img onclick="jugar_ahora()" class="boton" src="http://pixelartmaker.com/art/4ab04c08b86dc18.png" alt="Click para Jugar" /><br>
+                <p id="rdo"></p>
+                <script>
+                    function jugar_ahora() {
+                        var max = 20;
+                        var min = 1;
+                        var cant_intentos = 4;
+                        var acerto = false;
+                        var numero_aleatorio = Math.round(Math.random() * (max - min) + min);
+                        var numero;
+                        var nombre = document.getElementById("nombre").value;
+                        if (nombre == "") {
+                            alert("Por favor, ingrese su nombre para JUGAR");
+                        } else {
+                            while (cant_intentos > 0 && acerto != true) {
+                                cant_intentos--;
+                                numero = parseInt(prompt("Ingrese el número"));
+                                if (numero > max || numero < min) {
+                                    alert("Por favor ingrese un número del 1 al 20");
+                                } else {
+                                    if (numero == numero_aleatorio) {
+                                        alert("Felicitaciones lo conseguiste!!!");
+                                        acerto = true;
+                                    } else if (numero < numero_aleatorio) {
+                                        alert("PISTA: es mayor" + " " + "Le quedan " + cant_intentos + " intentos");
+                                    } else if (numero > numero_aleatorio) {
+                                        alert("PISTA: es menor" + " " + "Le quedan " + cant_intentos + " intentos");
+                                    } else {
+                                        alert("Gracias por participar!!!!");
+                                    }
+                                }
+                            }
+
+                            document.getElementById("rdo").innerHTML = "El número era: <strong>" + numero_aleatorio + "</strong>"
+                        }
+
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js " integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js " integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV " crossorigin="anonymous "></script>
 </body>
 <footer>
     <div class="container ">

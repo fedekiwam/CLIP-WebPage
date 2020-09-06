@@ -5,9 +5,19 @@
 
 /*Estilo de cabecera*/
 
+.containerFormato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
 .headerStyle {
-    color: rgb(13, 61, 3);
+    color: white;
     text-align: center;
+    padding: 20px;
+    background-color: rgb(211, 113, 57);
+    font-size: 60px;
 }
 
 header {
@@ -22,10 +32,21 @@ img {
     width: 100%;
     display: block;
     margin: auto;
+    align-items: center;
 }
 
 .imagenPrincipal {
-    width: 80%;
+    width: 50%;
+    margin: auto;
+    align-content: center;
+}
+
+.indexManzano {
+    width: 50%;
+    display: block;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(0, 162, 255, 0.685);
 }
 
 .mascarilla {
@@ -34,16 +55,20 @@ img {
     margin: auto;
 }
 
-.cita_Pasiflora {
+.cita_Pasiflora2 {
     color: rgb(13, 61, 3);
     text-align: left;
     font-style: italic;
     font-family: 'Times New Roman', Times, serif;
+    font-size: 23px;
 }
 
 .cita_RocioSagrado {
-    text-align: left;
-    background-color: rgb(255, 194, 80);
+    color: rgb(13, 61, 3);
+    text-align: center;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 23px;
 }
 
 .footer {
@@ -56,4 +81,44 @@ img {
     width: 80%;
     display: block;
     margin: auto;
+}
+
+.cita_Pasiflora1 {
+    color: rgb(13, 61, 3);
+    text-align: center;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    align-content: center;
+}
+
+.romero {
+    width: 40%;
+    margin: auto;
+    align-content: center;
+}
+
+.quienesSomos {
+    color: rgb(13, 61, 3);
+    text-align: center;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    align-content: center;
+}
+
+.adivinanza {
+    color: white;
+    text-align: center;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    align-content: center;
+    padding: 10px;
+    background-color: rgb(13, 61, 3);
+}
+
+.boton {
+    width: 150px;
+    cursor: pointer;
 }
